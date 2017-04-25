@@ -1,0 +1,10 @@
+
+.idea/
+*.pyc
+.cache/
+__pycache__/
+model/__pycache__/
+.DS_Store
+artifacts/
+model/.DS_Store
+

@@ -1,0 +1,593 @@
+Index: mobileAutoTestsBasicFramework/element_helpers/tap_and_press_element_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/tap_and_press_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/tap_and_press_element_helper.py	(revision )
+@@ -1,10 +1,10 @@
+-from element_helpers.wait_element_helper import WaitElementHelper
+-from element_helpers.find_element_helper import FindElementHelper
+-from element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+-from element_helpers.service_function_helper import ServiceFunctionHelper
++from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+ from selenium.common.exceptions import ElementNotVisibleException as error
+ from appium.webdriver.common.touch_action import TouchAction
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from time import sleep
+ 
+ import logging
+Index: mobileAutoTestsBasicFramework/element_helpers/authorization_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/authorization_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/authorization_helper.py	(revision )
+@@ -1,6 +1,6 @@
+-from element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+-from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-from element_helpers.keyboard_helper import KeyboardHelper
++from mobileAutoTestsBasicFramework.element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
+ from selenium.common.exceptions import ElementNotVisibleException as error
+ from time import sleep
+ from random import randint
+Index: mobileAutoTestsBasicFramework/element_helpers/element_text_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/element_text_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/element_text_helper.py	(revision )
+@@ -1,6 +1,6 @@
+-from element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+ from selenium.common.exceptions import NoSuchElementException as error
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ import logging
+ import re
+ 
+\ No newline at end of file
+Index: mobileAutoTestsBasicFramework/element_helpers/artifacts_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/artifacts_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/artifacts_helper.py	(revision )
+@@ -1,5 +1,5 @@
+ from datetime import datetime
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ 
+ import os
+ import logging
+Index: mobileAutoTestsBasicFramework/element_helpers/notification_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/notification_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/notification_helper.py	(revision )
+@@ -1,7 +1,7 @@
+-from element_helpers.find_element_helper import FindElementHelper
+-from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+ from PIL import Image
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from time import sleep
+ 
+ import _thread
+\ No newline at end of file
+Index: mobileAutoTestsBasicFramework/element_helpers/service_function_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/service_function_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/service_function_helper.py	(revision )
+@@ -1,4 +1,4 @@
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from time import sleep
+ 
+ import os
+Index: mobileAutoTestsBasicFramework/element_helpers/find_element_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/find_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/find_element_helper.py	(revision )
+@@ -1,5 +1,5 @@
+ from selenium.common.exceptions import NoSuchElementException as error
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from appium.webdriver.common.mobileby import MobileBy
+ 
+ import logging
+Index: mobileAutoTestsBasicFramework/model/base_test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/model/base_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/model/base_test.py	(revision )
+@@ -1,8 +1,8 @@
+-from model.application import Application
+-from model.appium_support import restartAppium
+-from model.platform_control.appium_control_test import ConfigSupport
+-from model.init_driver import InitAppiumDriverAndServer
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.application import Application
++from mobileAutoTestsBasicFramework.model.appium_support import restartAppium
++from mobileAutoTestsBasicFramework.model.platform_control.appium_control_test import ConfigSupport
++from mobileAutoTestsBasicFramework.model.init_driver import InitAppiumDriverAndServer
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ 
+ import pytest
+ import os
+Index: mobileAutoTestsBasicFramework/model/application.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/model/application.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/model/application.py	(revision )
+@@ -1,17 +1,17 @@
+ from conftest import root_dir, test_file, test_method, test_path
+-from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-from element_helpers.find_element_helper import FindElementHelper
+-from element_helpers.keyboard_helper import KeyboardHelper
+-from element_helpers.notification_helper import NotificationHelper
+-from element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+-from element_helpers.element_text_helper import ElementTextHelper
+-from element_helpers.authorization_helper import AuthorizationHelper
+-from element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+-from element_helpers.service_function_helper import ServiceFunctionHelper
+-from element_helpers.wait_element_helper import WaitElementHelper
+-from model.database_model.database_for_test import DataForTest
+-from model.database_model.database_connection import DataBaseConnection
+-from element_helpers.artifacts_helper import ArtifactsHelper
++from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
++from mobileAutoTestsBasicFramework.element_helpers.notification_helper import NotificationHelper
++from mobileAutoTestsBasicFramework.element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.element_text_helper import ElementTextHelper
++from mobileAutoTestsBasicFramework.element_helpers.authorization_helper import AuthorizationHelper
++from mobileAutoTestsBasicFramework.element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
++from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
++from mobileAutoTestsBasicFramework.model.database_model.database_for_test import DataForTest
++from mobileAutoTestsBasicFramework.model.database_model.database_connection import DataBaseConnection
++from mobileAutoTestsBasicFramework.element_helpers.artifacts_helper import ArtifactsHelper
+ 
+ 
+ def memorize(func):
+Index: mobileAutoTestsBasicFramework/model/platform_control/appium_control_test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/model/platform_control/appium_control_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/model/platform_control/appium_control_test.py	(revision )
+@@ -1,4 +1,4 @@
+-from model.config_support import ConfigSupport
++from mobileAutoTestsBasicFramework.model.config_support import ConfigSupport
+ 
+ 
+ class AppiumControlTest(object):
+Index: mobileAutoTestsBasicFramework/element_helpers/value_and_data_element_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/value_and_data_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/value_and_data_element_helper.py	(revision )
+@@ -1,8 +1,8 @@
+-from element_helpers.find_element_helper import FindElementHelper
+-from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-from element_helpers.keyboard_helper import KeyboardHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
+ from selenium.common.exceptions import ElementNotVisibleException as error
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+-from element_helpers.service_function_helper import ServiceFunctionHelper
++from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+ from time import sleep
+ 
+ import logging
+Index: mobileAutoTestsBasicFramework/element_helpers/wait_element_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/wait_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/wait_element_helper.py	(revision )
+@@ -1,9 +1,9 @@
+ from selenium.webdriver.support.wait import WebDriverWait
+ from selenium.common.exceptions import TimeoutException
+ from selenium.webdriver.support import expected_conditions as ec
+-from element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+ from selenium.common.exceptions import NoSuchElementException
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ 
+ import logging
+ 
+Index: mobileAutoTestsBasicFramework/model/database_model/database_for_test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/model/database_model/database_for_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/model/database_model/database_for_test.py	(revision )
+@@ -1,5 +1,5 @@
+-from model.database_model.database_connection import DataBaseConnection
+-from model.database_model.database_interface import DataBaseInterface
++from mobileAutoTestsBasicFramework.model.database_model.database_connection import DataBaseConnection
++from mobileAutoTestsBasicFramework.model.database_model.database_interface import DataBaseInterface
+ 
+ import sqlite3
+ import logging
+Index: mobileAutoTestsBasicFramework/element_helpers/scroll_and_swipe_element_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/scroll_and_swipe_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/scroll_and_swipe_element_helper.py	(revision )
+@@ -1,8 +1,8 @@
+-from element_helpers.find_element_helper import FindElementHelper
+-from element_helpers.wait_element_helper import WaitElementHelper
+-from element_helpers.service_function_helper import ServiceFunctionHelper
++from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
++from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+ from selenium.common.exceptions import NoSuchElementException as error
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from time import sleep
+ 
+ import logging
+\ No newline at end of file
+Index: mobileAutoTestsBasicFramework/element_helpers/keyboard_helper.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/element_helpers/keyboard_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/element_helpers/keyboard_helper.py	(revision )
+@@ -1,5 +1,5 @@
+ from selenium.common.exceptions import WebDriverException as error
+-from model.parameter_driver_for_helper import ParameterDriverForHelper
++from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+ from time import sleep
+ 
+ import logging
+Index: mobileAutoTestsBasicFramework/model/appium_device/appium_device_enviroment.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mobileAutoTestsBasicFramework/model/appium_device/appium_device_enviroment.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
++++ mobileAutoTestsBasicFramework/model/appium_device/appium_device_enviroment.py	(revision )
+@@ -1,7 +1,7 @@
+ from appium import webdriver
+-from model.base_test import BaseTest
++from mobileAutoTestsBasicFramework.model.base_test import BaseTest
+ 
+-from model.appium_device.base_device_enviroment import BaseDeviceEnvironment
++from mobileAutoTestsBasicFramework.model.appium_device.base_device_enviroment import BaseDeviceEnvironment
+ 
+ 
+ class AppiumDeviceEnvironment(BaseDeviceEnvironment):
+-Index: element_helpers/tap_and_press_element_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/tap_and_press_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/tap_and_press_element_helper.py	(revision )
+-@@ -1,10 +1,10 @@
+--from element_helpers.wait_element_helper import WaitElementHelper
+--from element_helpers.find_element_helper import FindElementHelper
+--from element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+--from element_helpers.service_function_helper import ServiceFunctionHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+- from selenium.common.exceptions import ElementNotVisibleException as error
+- from appium.webdriver.common.touch_action import TouchAction
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from time import sleep
+- 
+- import logging
+-Index: element_helpers/authorization_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/authorization_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/authorization_helper.py	(revision )
+-@@ -1,6 +1,6 @@
+--from element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+--from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+--from element_helpers.keyboard_helper import KeyboardHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
+- from selenium.common.exceptions import ElementNotVisibleException as error
+- from time import sleep
+- from random import randint
+-Index: element_helpers/element_text_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/element_text_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/element_text_helper.py	(revision )
+-@@ -1,6 +1,6 @@
+--from element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+- from selenium.common.exceptions import NoSuchElementException as error
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- import logging
+- import re
+- 
+-\ No newline at end of file
+-Index: element_helpers/artifacts_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/artifacts_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/artifacts_helper.py	(revision )
+-@@ -1,5 +1,5 @@
+- from datetime import datetime
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- 
+- import os
+- import logging
+-Index: element_helpers/notification_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/notification_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/notification_helper.py	(revision )
+-@@ -1,7 +1,7 @@
+--from element_helpers.find_element_helper import FindElementHelper
+--from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+- from PIL import Image
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from time import sleep
+- 
+- import _thread
+-\ No newline at end of file
+-Index: element_helpers/service_function_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/service_function_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/service_function_helper.py	(revision )
+-@@ -1,4 +1,4 @@
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from time import sleep
+- 
+- import os
+-Index: element_helpers/find_element_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/find_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/find_element_helper.py	(revision )
+-@@ -1,5 +1,5 @@
+- from selenium.common.exceptions import NoSuchElementException as error
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from appium.webdriver.common.mobileby import MobileBy
+- 
+- import logging
+-Index: model/base_test.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/base_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/base_test.py	(revision )
+-@@ -1,8 +1,8 @@
+--from model.application import Application
+--from model.appium_support import restartAppium
+--from model.platform_control.appium_control_test import ConfigSupport
+--from model.init_driver import InitAppiumDriverAndServer
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.application import Application
+-+from mobileAutoTestsBasicFramework.model.appium_support import restartAppium
+-+from mobileAutoTestsBasicFramework.model.platform_control.appium_control_test import ConfigSupport
+-+from mobileAutoTestsBasicFramework.model.init_driver import InitAppiumDriverAndServer
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- 
+- import pytest
+- import os
+-Index: model/runner_test.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/runner_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/runner_test.py	(revision )
+-@@ -1,5 +1,5 @@
+--from element_helpers.artifacts_helper import get_time
+--from model.config_support import ConfigSupport
+-+from mobileAutoTestsBasicFramework.element_helpers.artifacts_helper import get_time
+-+from mobileAutoTestsBasicFramework.model.config_support import ConfigSupport
+- 
+- import argparse
+- import sys
+-Index: model/application.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/application.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/application.py	(revision )
+-@@ -1,17 +1,17 @@
+- from conftest import root_dir, test_file, test_method, test_path
+--from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+--from element_helpers.find_element_helper import FindElementHelper
+--from element_helpers.keyboard_helper import KeyboardHelper
+--from element_helpers.notification_helper import NotificationHelper
+--from element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+--from element_helpers.element_text_helper import ElementTextHelper
+--from element_helpers.authorization_helper import AuthorizationHelper
+--from element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+--from element_helpers.service_function_helper import ServiceFunctionHelper
+--from element_helpers.wait_element_helper import WaitElementHelper
+--from model.database_model.database_for_test import DataForTest
+--from model.database_model.database_connection import DataBaseConnection
+--from element_helpers.artifacts_helper import ArtifactsHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.notification_helper import NotificationHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.scroll_and_swipe_element_helper import ScrollAndSwipeElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.element_text_helper import ElementTextHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.authorization_helper import AuthorizationHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.value_and_data_element_helper import ValueAndDataElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
+-+from mobileAutoTestsBasicFramework.model.database_model.database_for_test import DataForTest
+-+from mobileAutoTestsBasicFramework.model.database_model.database_connection import DataBaseConnection
+-+from mobileAutoTestsBasicFramework.element_helpers.artifacts_helper import ArtifactsHelper
+- 
+- 
+- def memorize(func):
+-Index: model/platform_control/appium_control_test.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/platform_control/appium_control_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/platform_control/appium_control_test.py	(revision )
+-@@ -1,4 +1,4 @@
+--from model.config_support import ConfigSupport
+-+from mobileAutoTestsBasicFramework.model.config_support import ConfigSupport
+- 
+- 
+- class AppiumControlTest(object):
+-Index: element_helpers/value_and_data_element_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/value_and_data_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/value_and_data_element_helper.py	(revision )
+-@@ -1,8 +1,8 @@
+--from element_helpers.find_element_helper import FindElementHelper
+--from element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+--from element_helpers.keyboard_helper import KeyboardHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.tap_and_press_element_helper import TapAndPressElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.keyboard_helper import KeyboardHelper
+- from selenium.common.exceptions import ElementNotVisibleException as error
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from time import sleep
+- 
+- import logging
+-Index: element_helpers/wait_element_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/wait_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/wait_element_helper.py	(revision )
+-@@ -1,9 +1,9 @@
+- from selenium.webdriver.support.wait import WebDriverWait
+- from selenium.common.exceptions import TimeoutException
+- from selenium.webdriver.support import expected_conditions as ec
+--from element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+- from selenium.common.exceptions import NoSuchElementException
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- 
+- import logging
+- 
+-Index: model/database_model/database_for_test.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/database_model/database_for_test.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/database_model/database_for_test.py	(revision )
+-@@ -1,5 +1,5 @@
+--from model.database_model.database_connection import DataBaseConnection
+--from model.database_model.database_interface import DataBaseInterface
+-+from mobileAutoTestsBasicFramework.model.database_model.database_connection import DataBaseConnection
+-+from mobileAutoTestsBasicFramework.model.database_model.database_interface import DataBaseInterface
+- 
+- import sqlite3
+- import logging
+-Index: element_helpers/scroll_and_swipe_element_helper.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- element_helpers/scroll_and_swipe_element_helper.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ element_helpers/scroll_and_swipe_element_helper.py	(revision )
+-@@ -1,8 +1,8 @@
+--from element_helpers.find_element_helper import FindElementHelper
+--from element_helpers.wait_element_helper import WaitElementHelper
+--from element_helpers.service_function_helper import ServiceFunctionHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.find_element_helper import FindElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.wait_element_helper import WaitElementHelper
+-+from mobileAutoTestsBasicFramework.element_helpers.service_function_helper import ServiceFunctionHelper
+- from selenium.common.exceptions import NoSuchElementException as error
+--from model.parameter_driver_for_helper import ParameterDriverForHelper
+-+from mobileAutoTestsBasicFramework.model.parameter_driver_for_helper import ParameterDriverForHelper
+- from time import sleep
+- 
+- import logging
+-\ No newline at end of file
+-Index: model/appium_device/appium_device_enviroment.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- model/appium_device/appium_device_enviroment.py	(revision 5561d6c0c890a385a79de92a16ae8114dbce2d20)
+-+++ model/appium_device/appium_device_enviroment.py	(revision )
+-@@ -1,7 +1,7 @@
+- from appium import webdriver
+--from model.base_test import BaseTest
+-+from mobileAutoTestsBasicFramework.model.base_test import BaseTest
+- 
+--from model.appium_device.base_device_enviroment import BaseDeviceEnvironment
+-+from mobileAutoTestsBasicFramework.model.appium_device.base_device_enviroment import BaseDeviceEnvironment
+- 
+- 
+- class AppiumDeviceEnvironment(BaseDeviceEnvironment):

@@ -1,0 +1,6 @@
+[submodule "mobile_automation_progect"]
+	path = mobile_automation_progect
+	url = https://gitlab.rambler.ru/rds-qa-automation/mobile_automation_progect.git
+[submodule "mobileAutoTestsBasicFramework"]
+	path = mobileAutoTestsBasicFramework
+	url = https://gitlab.rambler.ru/rds-qa-automation/mobileAutoTestsBasicFramework.git
