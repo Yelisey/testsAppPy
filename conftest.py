@@ -79,7 +79,7 @@ def pytest_addoption(parser):
         action="store",
         default=None,
         required=False,
-        help="name of map. Example for cmd_mode: Path('app/app_name.apk')"
+        help="name of map. Example for cmd_mode: Path('app/trololo.apk')"
              "Example for runner: app_name.apk")
     parser.addoption("--autoAcceptAlerts", action="store", default=True,
                      help="Auto accepts alerts on iOS devices")
