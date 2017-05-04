@@ -47,19 +47,19 @@ def pytest_addoption(parser):
     parser.addoption(
         "--host",
         action="store",
-        default=None,
+        default="127.0.0.1",
         required=False,
         help="host for Appium server")
     parser.addoption(
         "--port",
         action="store",
-        default=None,
+        default="4723",
         required=False,
         help="port for Appium server")
     parser.addoption(
         "--platformName",
         action="store",
-        default=None,
+        default="Android",
         required=False,
         help="platformName of device")
     parser.addoption(
@@ -71,15 +71,15 @@ def pytest_addoption(parser):
     parser.addoption(
         "--deviceName",
         action="store",
-        default=None,
+        default="yelissey.oshlokov",
         required=False,
         help="name of device")
     parser.addoption(
         "--app_name",
         action="store",
-        default=None,
+        default=PATH('app/trololo.apk'),
         required=False,
-        help="name of map. Example for cmd_mode: Path('app/trololo.apk')"
+        help="name of map. Example for cmd_mode: PATH('app/trololo.apk')"
              "Example for runner: app_name.apk")
     parser.addoption("--autoAcceptAlerts", action="store", default=True,
                      help="Auto accepts alerts on iOS devices")
